@@ -1,0 +1,163 @@
+*{
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+}
+
+p{
+  margin: 0;
+}
+
+body{
+  margin: 0;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(210, 60%, 98%);
+}
+
+.notification-holder{
+  width: 70%;
+  max-width: 750px;
+  margin: 5vh 0;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.1);
+  padding: 25px 25px;
+  border-radius: 10px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header-name{
+  display: flex;
+  align-items: center;
+}
+
+.notifications-text{
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#amount-unread{
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(219, 85%, 26%);
+  padding: 2px 12px;
+  border-radius: 6px;
+}
+
+#mark-as-read{
+  background: none;
+  border: none;
+  color: hsl(219, 14%, 63%);
+}
+
+#mark-as-read:hover,
+.sender-name:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+
+.notification{
+  width: 95%;
+  color: hsl(219, 14%, 63%);
+  background-color: hsl(210, 60%, 98%);
+  display: flex;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+
+.picture-container{
+  margin-right: 16px;
+}
+
+.picture-container img{
+  width: 45px;
+  height: auto;
+}
+
+.sender-name{
+  font-weight: 800;
+  color: hsl(224, 21%, 14%);
+  margin-right: 6px;
+}
+
+.event-message{
+  font-weight: 800;
+  color: hsl(219, 85%, 26%);
+  margin-left: 6px;
+}
+
+.event-message{
+  cursor: pointer;
+}
+
+.event-message:target{
+  background-color: yellow;
+}
+
+.notification-date{
+  color: hsl(219, 14%, 63%);
+}
+
+.unread-mark{
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: hsl(1, 90%, 64%);
+  margin-left: 16px;
+  align-self: center;
+}
+
+.private-message{
+  margin-top: 20px;
+  border: 2px solid hsl(211, 68%, 94%);
+  padding: 22px;
+  border-radius: 10px;
+}
+
+.private-message:hover{
+  background-color: hsl(211, 68%, 94%);
+  cursor: pointer;
+}
+
+.notification-head{
+  display: flex;
+}
+
+.img-in-notification{
+  width: 60px;
+  height: 60px;
+  margin-left: auto;
+}
+
+.img-in-notification:hover{
+  box-shadow: 0px 0px 15px 1px rgba(72, 124, 141, 0.3);
+  cursor: pointer;
+}
+
+@media (max-width: 500px){
+  .notification-holder{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0;
+    padding: 25px 25px;
+    border-radius: 0;
+  }
+  *{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 340px){
+  *{
+    font-size: 12px;
+  }
+}
